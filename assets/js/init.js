@@ -1,8 +1,25 @@
-(function($){
-  $(function(){
 
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
+$('.button-collapse').sideNav();
+$('.parallax').parallax();
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+	margin: 30,
+	nav: true,
+	navText: [ '', '' ],
+	    loop:true,
+	    autoplay:true,
+	    autoplayTimeout:5000,
+	    responsiveClass:true,
+	responsive:{
+	    0:{
+	        items:1
+	    },
+	    600:{
+	        items:1
+	    },
+	    992:{
+	        items:1
+	    }
+	}
+});
